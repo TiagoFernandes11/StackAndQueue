@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -21,11 +20,6 @@ public class QueueExample {
         for (int i = 0; i < 5; i++) {
             System.out.println(lista.remove());
         }
-    }
-    public static int queueInt(ArrayList<Integer> lista) {
-        if (lista.size() >= 1) {
-            return lista.remove(0);
-        }
-        return 0;
+        sc.close();
     }
 }
