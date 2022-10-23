@@ -1,5 +1,7 @@
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 /**
@@ -10,7 +12,7 @@ public class QueueExample {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> lista = new ArrayList<>();
+        Queue<Integer> lista = new LinkedList<>();
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Digite um numero inteiro: ");
@@ -20,8 +22,8 @@ public class QueueExample {
         System.out.println("");
         System.out.println("Lista em Queue: ");
 
-        for (int i = 0; i < lista.size(); i++) {
-            System.out.println(queueInt(lista));
+        for (int i = 0; i < 5; i++) {
+            System.out.println(lista.remove());
         }
     }
 
