@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.Stack;
 /**
@@ -16,7 +15,7 @@ public class StackExemple {
             listaStack.add(sc.nextInt());
         }
         
-        System.out.println("\nImprimindo a lista: ");
+        System.out.println("\nLista em Stack: ");
         
         for (int i = 0; i < 5; i++) {
             System.out.println(listaStack.pop());
