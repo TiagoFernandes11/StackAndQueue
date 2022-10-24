@@ -6,6 +6,11 @@ import java.util.Scanner;
  *
  * @author TiagoFernandes
  */
+// Desenvolva um programa que leia 5 numeros e imprima-os na ordem das entradas. Utilize uma Queue
+
+// Desenvolva um programa que leia 5 nomes e imprima-os, considerando a ordem de chegada.
+
+
 public class QueueExample {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

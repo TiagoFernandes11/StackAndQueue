@@ -4,6 +4,10 @@ import java.util.Stack;
  *
  * @author TiagoFernandes
  */
+
+ // Desenvolva um programa que leia 5 numeros e imprima-os na ordem em contraria das entradas. Utilizando um Stack
+
+
 public class StackExemple {
     
     public static void main(String[] args) {
@@ -12,7 +16,7 @@ public class StackExemple {
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Digite um numero inteiro: ");
-            listaStack.add(sc.nextInt());
+            listaStack.push(sc.nextInt());
         }
         
         System.out.println("\nLista em Stack: ");
