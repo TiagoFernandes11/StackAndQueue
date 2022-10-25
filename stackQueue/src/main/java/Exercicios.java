@@ -11,10 +11,21 @@ import java.util.Stack;
 
  // Desenvolva um programa que leia 5 numeros e imprima-os na ordem em contraria das entradas. Utilizando um Stack
 
+ // Desenvolva um programa que leia 5 numeros e imprima-os na ordem das entradas. Utilize uma Queue
+
+ // Desenvolva um programa que leia 5 nomes e imprima-os, considerando a ordem de chegada.
+
 public class Exercicios {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println("Exercício 1: ");
+        imprimeStack(entradasStack());
+
+        System.out.println("Exercício 2: ");
+        imprimeQueue(entradasQueue());
+
+        System.out.println("Exercício 3: ");
+        imprimeQueue(entradasNomesQueue());
     }
 
 
