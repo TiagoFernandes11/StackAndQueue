@@ -25,12 +25,13 @@ public class Exercicios {
         imprimeQueue(entradasQueue());
 
         System.out.println("Exercício 3: ");
-        imprimeQueue(entradasNomesQueue());
+        imprimeQueueNome(entradasNomesQueue());
+
     }
 
 
 
-    public static void entradasQueue(){
+    public static Queue<Integer> entradasQueue(){
         Queue<Integer> listaQueue = new LinkedList<>();
         Scanner sc = new Scanner(System.in);
 
@@ -38,24 +39,22 @@ public class Exercicios {
             System.out.print("Digite um numero inteiro: ");
             listaQueue.add(sc.nextInt());
         }
-
-        sc.close();
+        return listaQueue;
     }
 
-    public static void entradasNomesQueue(){
+    public static Queue<String> entradasNomesQueue(){
         Queue<String> listaQueue = new LinkedList<>();
         Scanner sc = new Scanner(System.in);
-
+        sc.nextLine();
         for(int i = 0; i < 5; i++){
             System.out.print("Digite um nome: ");
             listaQueue.add(sc.nextLine());
         }
-
-        sc.close();
+        return listaQueue;
     }
 
 
-    public static void entradasStack(){
+    public static Stack<Integer> entradasStack(){
         Stack<Integer> listaStack = new Stack<>();
         Scanner sc = new Scanner(System.in);
 
@@ -63,16 +62,23 @@ public class Exercicios {
             System.out.print("Digite um numero inteiro: ");
             listaStack.push(sc.nextInt());
         }
+        return listaStack;
     }
 
     public static void imprimeStack(Stack<Integer> lista){
-        for(int i = 0; i < lista.size(); i++){
+        for(int i = 0; i < 5; i++){
             System.out.println(lista.pop());
         }
     }
 
     public static void imprimeQueue(Queue<Integer> lista){
-        for(int i = 0; i < lista.size(); i++){
+        for(int i = 0; i < 5; i++){
+            System.out.println(lista.remove());
+        }
+    }
+
+    public static void imprimeQueueNome(Queue<String> lista){
+        for(int i = 0; i < 5; i++){
             System.out.println(lista.remove());
         }
     }
